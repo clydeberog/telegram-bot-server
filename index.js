@@ -54,7 +54,7 @@ bot.on('callback_query', (query) => {
     console.log('callback_query', { chatId, action })
 
   if (action === 'help') {
-    bot.sendMessage(chatId, 'Menu utama:', mainMenu())
+    bot.sendMessage(chatId, 'Main Menu', mainMenu())
   } else if (responses[action]) {
     bot.sendMessage(chatId, responses[action], {
       reply_markup: {
@@ -73,10 +73,11 @@ bot.on('message', (msg) => {
       console.log('message', { id: msg.message_id, from: msg.from && msg.from.username, text: msg.text })
     bot.sendMessage(
       msg.chat.id,
-      'Silakan gunakan menu di bawah 👇',
+      'Please choose one of the menu below:',
       mainMenu()
     )
   }
 })
+
 
 console.log('🤖 Telegram bot running with polling...')
