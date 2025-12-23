@@ -5,25 +5,25 @@ const bot = new TelegramBot(process.env.TELEGRAM_BOT_TOKEN, {
 })
 const responses = {
   personal_loan:
-    'Find the Best Personal Loans Singapore Has to Offer Right Here:\nhttps://gordonh40.sg-host.com/personal-loan/',
+    'Find the Best Personal L04NS Singapore Has to Offer Right Here:\nhttps://gordonh40.sg-host.com/personal-loan/',
 
   fast_personal_loan:
-    'Need a Fast Approval Personal Loan? First Read Me Here:\nhttps://gordonh40.sg-host.com/fast-personal-loan/',
+    'Need a Fast Approval Personal L04N? First Read Me Here:\nhttps://gordonh40.sg-host.com/fast-personal-loan/',
 
   short_term_loan:
-    'Bridge Your Financial Gap with Our Short Term Loan Solutions:\nhttps://gordonh40.sg-host.com/short-term-loan/',
+    'Bridge Your Financial Gap with Our Short Term L04N Solutions:\nhttps://gordonh40.sg-host.com/short-term-loan/',
 
   get_a_loan:
-    'Apply Now for A Loan:\nhttps://gordonh40.sg-host.com/get-a-loan/'
+    'Apply Now for A L04N:\nhttps://gordonh40.sg-host.com/get-a-loan/'
 }
 function mainMenu() {
   return {
     reply_markup: {
       inline_keyboard: [
-        [{ text: '💰 Personal Loan', callback_data: 'personal_loan' }],
-        [{ text: '⚡ Fast Personal Loan', callback_data: 'fast_personal_loan' }],
-        [{ text: '⏳ Short Term Loan', callback_data: 'short_term_loan' }],
-        [{ text: '📝 Apply Loan Now', callback_data: 'get_a_loan' }],
+        [{ text: '💰 Personal L04N', callback_data: 'personal_loan' }],
+        [{ text: '⚡ Fast Personal L04N', callback_data: 'fast_personal_loan' }],
+        [{ text: '⏳ Short Term L04N', callback_data: 'short_term_loan' }],
+        [{ text: '📝 Apply L04N Now', callback_data: 'get_a_loan' }],
         [{ text: 'ℹ️ Help', callback_data: 'help' }]
       ]
     }
@@ -81,3 +81,4 @@ bot.on('message', (msg) => {
 
 
 console.log('🤖 Telegram bot running with polling...')
+
