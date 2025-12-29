@@ -4,26 +4,22 @@ const bot = new TelegramBot(process.env.TELEGRAM_BOT_TOKEN, {
   polling: true
 })
 const responses = {
-  personal_loan:
-    'Find the Best Personal L04NS Singapore Has to Offer Right Here:\nhttps://gordonh40.sg-host.com/personal-loan/',
+  personal:
+    'Find the 🅑🅔🅢🅣 🅟🅔🅡🅢🅞🅝🅐🅛 🅛🅞🅐🅝🅢 🅢🅘🅝🅖🅐🅟🅞🅡🅔 Has to Offer Right Here : https://gordonh40.sg-host.com/',
 
-  fast_personal_loan:
-    'Need a Fast Approval Personal L04N? First Read Me Here:\nhttps://gordonh40.sg-host.com/fast-personal-loan/',
+  short_term:
+    'Bridge Your Financial Gap with Our 🅢🅗🅞🅡🅣 🅣🅔🅡🅜 🅛🅞🅐🅝 Solutions : https://gordonh40.sg-host.com/',
 
-  short_term_loan:
-    'Bridge Your Financial Gap with Our Short Term L04N Solutions:\nhttps://gordonh40.sg-host.com/short-term-loan/',
-
-  get_a_loan:
-    'Apply Now for A L04N:\nhttps://gordonh40.sg-host.com/get-a-loan/'
+  contact_us:
+    'Contact with us now : https://gordonh40.sg-host.com/'
 }
 function mainMenu() {
   return {
     reply_markup: {
       inline_keyboard: [
-        [{ text: '💰 Personal L04N', callback_data: 'personal_loan' }],
-        [{ text: '⚡ Fast Personal L04N', callback_data: 'fast_personal_loan' }],
-        [{ text: '⏳ Short Term L04N', callback_data: 'short_term_loan' }],
-        [{ text: '📝 Apply L04N Now', callback_data: 'get_a_loan' }],
+        [{ text: '💰 Personal', callback_data: 'personal' }],
+        [{ text: '⏳ Short Term', callback_data: 'short_term' }],
+        [{ text: '📝 Contact Us', callback_data: 'contact_us' }],
         [{ text: 'ℹ️ Help', callback_data: 'help' }]
       ]
     }
